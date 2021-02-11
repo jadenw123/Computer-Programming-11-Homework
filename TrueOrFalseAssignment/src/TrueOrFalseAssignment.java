@@ -35,6 +35,7 @@ public class TrueOrFalseAssignment {
         System.out.println((false == false) && (20) == (4) * 5);
         System.out.println((false == false) && (20) == (20));
         System.out.println((false == false) && (true) == (true));
+		System.out.println((false) && (true));
 
         //Question 5
         System.out.println((Math.abs(-2) == 2) || (Math.sqrt(Math.pow(9,2)) <= 9 && (-4 <= 4)));
