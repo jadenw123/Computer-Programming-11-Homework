@@ -21,21 +21,22 @@ public class ArrayPractice {
         for (int i = 0;i<array2.length;i++){
             array2[i] = (int)(Math.random()*100) + 1;
             add = add + array2[i];
-            System.out.println("index:"+i+"value"+array2[i]);
+            System.out.println("index: "+i+"\tvalue: "+array2[i]);
         }
+        System.out.println("");
         average = add/10;
-        System.out.println("Average all Values:"+average);
+        System.out.println("Average all Values:"+average + "\n");
 
         int x = array2[0];
         array2[0] = array2[1];
         array2[1] = x;
-        System.out.println(array2[0]);
-        System.out.println(array2[1] + "\n");
+        System.out.println("Swap Index Pos 1: "+array2[0]);
+        System.out.println("Swap Index Pos 0: "+array2[1] + "\n");
 
         int [] array3 = new int[10];
         for (int i = 0;i<array3.length;i++){
             array3[i] = array2[9 - i];
-            System.out.println(array3[i]);
+            System.out.println("index: "+i+"\tvalue: "+array3[i]);
         }
 
 
