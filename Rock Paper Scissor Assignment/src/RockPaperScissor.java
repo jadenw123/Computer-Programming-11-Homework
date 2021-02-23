@@ -14,11 +14,6 @@ public class RockPaperScissor {
         String [] plays = {r, p, s};
 
 
-        //player can choose to continue or quit
-        System.out.println("Continue or Quit");
-        boolean quit = false;
-
-
         String ComChoice;
         String PlayChoice;
 
@@ -62,6 +57,13 @@ public class RockPaperScissor {
                     }else if (PlayChoice.equals(s) && ComChoice.equals(p)){
 
                         System.out.println("You Win");
+
+
+                //player can choose to continue or quit
+                System.out.println("Continue or Quit");
+                boolean quit = false;
+                String Continue;
+                String Exit;
 
 
 
