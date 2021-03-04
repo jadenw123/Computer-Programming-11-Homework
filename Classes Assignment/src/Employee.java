@@ -1,12 +1,15 @@
 public class Employee {
 
-        private int id;
-        private String firstName;
-        private String lastName;
+        private final int id;
+        private final String firstName;
+        private final String lastName;
         private int salary;
 
     public Employee(int id, String firstName, String lastName, int salary){
-
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.salary = salary;
     }
 
 
@@ -23,7 +26,7 @@ public class Employee {
     }
 
     public String getName() {
-        return firstName + lastName;
+        return firstName +" "+ lastName;
     }
 
     public int getSalary() {
@@ -33,6 +36,22 @@ public class Employee {
     public void setSalary(int salary) {
         this.salary = salary;
     }
+
+    public int getAnnualSalary(){
+        return salary*12;
+    }
+
+    public int raiseSalary(int percent){
+        return (int)(salary*(double)percent/100);
+    }
+
+    public String toString(){
+        return "id: " + this.id + "\tname: " + getName() + "\tsalary: " + this.salary;
+    }
+
+
+
+
 
 
 }
