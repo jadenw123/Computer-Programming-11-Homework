@@ -11,11 +11,12 @@ public class Student {
         this.studentId = studentId;
     }
 
-    public String getFirstName() {
+
+    public String getFirstName(){
         return firstName;
     }
 
-    public String getLastName() {
+    public String getLastName(){
         return lastName;
     }
 
@@ -23,11 +24,11 @@ public class Student {
         return firstName + lastName;
     }
 
-    public int getGrade() {
+    public int getGrade(){
         return grade;
     }
 
-    public int getStudentId() {
+    public int getStudentId(){
         return studentId;
     }
 
