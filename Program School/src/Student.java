@@ -12,11 +12,7 @@ public class Student{
         this.grade = grade;
         this.studentId = studentId;
     }
-
-    public static void studentArrayList() {
-    }
-
-
+    
     public String getFirstName(){
         return firstName;
     }
