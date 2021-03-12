@@ -13,6 +13,9 @@ public class Student{
         this.studentId = studentId;
     }
 
+    public static void studentArrayList() {
+    }
+
 
     public String getFirstName(){
         return firstName;
