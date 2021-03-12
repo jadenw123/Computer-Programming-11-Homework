@@ -1,8 +1,10 @@
-public class Student {
+public class Student{
+
     private String firstName;
     private String lastName;
     private int grade;
     private int studentId;
+
 
     Student(String firstName, String lastName, int grade, int studentId){
         this.firstName = firstName;

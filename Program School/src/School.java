@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class School {
+public class School{
     private String door;
     private String room;
     private String table;
@@ -48,15 +48,10 @@ public class School {
     }
 
     //show all students
-    public void showAllTeacherArrayList(String firstName, String lastName, int grade, int studentId){
+    public void showAllStudentArrayList(String firstName, String lastName, int grade, int studentId){
         Student student = new Student(firstName, lastName, grade, studentId);
         System.out.println(studentArrayList);
     }
-
-    //add 10 students
-
-
-
 
 
 }

@@ -1,7 +1,8 @@
-public class Teacher {
+public class Teacher{
     private String firstName;
     private String lastName;
     private String subject;
+
 
     Teacher(String firstName, String lastName, String subject){
         this.firstName = firstName;
