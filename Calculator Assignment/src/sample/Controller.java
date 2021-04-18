@@ -2,22 +2,52 @@ package sample;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 
 import java.awt.*;
 import java.util.ArrayList;
 
 public class Controller {
-    public Label labelDisplay;
+
+
+    public TextField textScreen;
+    private int operators;
+    private int answer;
+    private int number;
+    public void operation(){
+        switch (operators){
+            case 1:
+                answer = number + Integer.parseInt(textScreen.getText());
+                textScreen.setText(Integer.toString(answer));
+                break;
+
+            case 2:
+                answer = number - Integer.parseInt(textScreen.getText());
+                textScreen.setText(Integer.toString(answer));
+                break;
+
+            case 3:
+                answer = number * Integer.parseInt(textScreen.getText());
+
+                textScreen.setText(Integer.toString(answer));
+                break;
+
+            case 4:
+                answer = number / Integer.parseInt(textScreen.getText());
+                textScreen.setText(Integer.toString(answer));
+                break;
+        }
+    }
 
 
     public void addNumber(String number){
-        String display = labelDisplay.getText() + number;
-        labelDisplay.setText(display);
+        String display = textScreen.getText() + number;
+        textScreen.setText(display);
     }
 
     public void addOperator(String operator){
-        String display = labelDisplay.getText() + operator;
-        labelDisplay.setText(display);
+        String display = textScreen.getText() + operator;
+        textScreen.setText(display);
     }
 
     ArrayList<String> numberList = new ArrayList<>();
@@ -75,35 +105,32 @@ public class Controller {
     }
 
     public void buttonEquals(ActionEvent actionEvent){
-        if(numberList.isEmpty() && operatorList.isEmpty()){
-        }
-        else if (numberList.size()>1){
-
-        }
-        else if (operatorList.size()>1){
+        operation();
         }
 
-    }
 
     public void buttonPlus(ActionEvent actionEvent) {
-        addOperator("+");
-        operatorList.add("+");
+        number = Integer.parseInt(textScreen.getText());
+        operators = 1;
+        textScreen.setText("");
     }
 
     public void buttonMinus(ActionEvent actionEvent) {
-        addOperator("-");
-        operatorList.add("-");
+        number = Integer.parseInt(textScreen.getText());
+        operators = 2;
+        textScreen.setText("");
     }
 
     public void buttonMultiply(ActionEvent actionEvent) {
-        addOperator("x");
-        operatorList.add("x");
+        number = Integer.parseInt(textScreen.getText());
+        operators = 3;
+        textScreen.setText("");
     }
 
     public void buttonClear(ActionEvent actionEvent) { ;
             numberList.clear();
             operatorList.clear();
-            labelDisplay.setText("0");
+            textScreen.setText("0");
     }
 
 }
