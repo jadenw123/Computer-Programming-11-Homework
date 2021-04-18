@@ -52,7 +52,7 @@
             <Font size="24.0" />
          </font>
       </Button>
-      <Button layoutX="176.0" layoutY="350.0" mnemonicParsing="false" onAction="#button0" prefHeight="50.0" prefWidth="88.0" text="0">
+      <Button layoutX="88.0" layoutY="350.0" mnemonicParsing="false" onAction="#button0" prefHeight="50.0" prefWidth="88.0" text="0">
          <font>
             <Font size="24.0" />
          </font>
@@ -77,11 +77,16 @@
             <Font size="24.0" />
          </font>
       </Button>
-      <Button layoutX="88.0" layoutY="350.0" mnemonicParsing="false" onAction="#buttonClear" prefHeight="50.0" prefWidth="88.0" text="Clear">
+      <Button layoutY="350.0" mnemonicParsing="false" onAction="#buttonClear" prefHeight="50.0" prefWidth="88.0" text="Clear">
          <font>
             <Font size="24.0" />
          </font>
       </Button>
-      <TextField fx:id="textScreen" layoutX="2.0" layoutY="150.0" prefHeight="177.0" prefWidth="349.0" />
+      <TextField fx:id="textScreen" layoutX="2.0" layoutY="115.0" prefHeight="227.0" prefWidth="349.0" />
+      <Button layoutX="176.0" layoutY="350.0" mnemonicParsing="false" onAction="#buttonDivide" prefHeight="50.0" prefWidth="88.0" text="/">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

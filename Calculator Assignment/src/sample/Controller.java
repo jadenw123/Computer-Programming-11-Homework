@@ -127,10 +127,18 @@ public class Controller {
         textScreen.setText("");
     }
 
-    public void buttonClear(ActionEvent actionEvent) { ;
+    public void buttonDivide(ActionEvent actionEvent) {
+        number = Integer.parseInt(textScreen.getText());
+        operators = 4;
+        textScreen.setText("");
+    }
+
+
+
+    public void buttonClear(ActionEvent actionEvent) {
             numberList.clear();
             operatorList.clear();
-            textScreen.setText("0");
+            textScreen.setText("");
     }
 
 }
